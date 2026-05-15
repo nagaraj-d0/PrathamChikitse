@@ -1,0 +1,9 @@
+<resources>
+    <style name="Base.Theme.PrathamChikitse" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">#004D40</item>
+        <item name="android:navigationBarColor">#004D40</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.PrathamChikitse" parent="Base.Theme.PrathamChikitse"/>
+</resources>

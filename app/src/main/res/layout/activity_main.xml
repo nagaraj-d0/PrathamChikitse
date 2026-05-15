@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F4F8">
+
+    <!-- Hero Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#00897B"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏥 ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pratham Chikitse"
+            android:textColor="#B2DFDB"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="3dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFFFFF"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Select emergency for instant first-aid guidance"
+            android:textColor="#E0F2F1"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+    <!-- Red Alert Strip -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B71C1C"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🚨 Life-threatening? Call 108 immediately"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCall108"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:text="CALL 108"
+            android:textSize="11sp"
+            android:textColor="#B71C1C"
+            android:backgroundTint="#FFFFFF"
+            app:cornerRadius="20dp"/>
+
+    </LinearLayout>
+
+    <!-- Section Label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  CHOOSE EMERGENCY TYPE"
+        android:textSize="11sp"
+        android:textColor="#00897B"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:paddingTop="14dp"
+        android:paddingBottom="6dp"
+        android:paddingStart="16dp"/>
+
+    <!-- Emergency Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEmergencies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+
+</LinearLayout>
