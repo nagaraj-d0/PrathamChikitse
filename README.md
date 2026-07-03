@@ -1,4 +1,4 @@
-# ಪ್ರಥಮ ಚಿಕಿತ್ಸೆ — Pratham Chikitse 🏥
+# Pratham Chikitse 🏥
 
 A life-saving offline first-aid emergency guide Android app
 built for rural Karnataka communities.
